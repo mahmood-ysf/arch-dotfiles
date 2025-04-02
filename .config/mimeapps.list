@@ -10,3 +10,4 @@ image/vnd.microsoft.icon=google-chrome.desktop
 
 [Added Associations]
 image/vnd.microsoft.icon=google-chrome.desktop;
+application/pdf=org.gnome.Evince.desktop;

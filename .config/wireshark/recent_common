@@ -1,4 +1,4 @@
-# Common recent settings file for Wireshark 4.4.1.
+# Common recent settings file for Wireshark 4.4.3.
 #
 # This file is regenerated each time Wireshark is quit
 # and when changing configuration profile.
@@ -6,16 +6,16 @@
 
 ######## Recent capture files (latest last), cannot be altered through command line ########
 
-recent.capture_file: /home/mahmood/mahmood.pcap
-recent.capture_file: /home/mahmood/tcp.pcap
-recent.capture_file: /home/mahmood/000349-966534892894-966115079586-03aa2080613ce4b949941d932bc38714@172.31.35.175_5060.pcap
-recent.capture_file: /home/mahmood/Downloads/092045-966115107056-966530175342-69e25f5f6eb8878f2524d8cd223612ca@172.31.43.54_5060.pcap
-recent.capture_file: /home/mahmood/Downloads/call_7a7196ef076b6d8f148c169b4fd08f5a@172.31.12.178_5060.pcap
-recent.capture_file: /home/mahmood/tcpdumps/capture.pcap
-recent.capture_file: /home/mahmood/pcaps/110118-97148369598-60515966501246545-2095e7ad6be5ea92029083b00524035a@3.69.71.188_5060.pcap
-recent.capture_file: /home/mahmood/Downloads/call_754a21b37cca6a93484217581bd2aa17@172.31.4.246_5060.pcap
-recent.capture_file: /home/mahmood/Downloads/export_4678503c594ea38f5b97020d3060b1ce@172.31.36.227_5060.pcap
-recent.capture_file: /home/mahmood/Downloads/export_4678503c594ea38f5b97020d3060b1ce@172.31.36.227_5060 (1).pcap
+recent.capture_file: /home/mahmood/Downloads/686b4a915bebb0694f65a0361be77d01@81.171.28.171_5080 (1).pcap
+recent.capture_file: /home/mahmood/Downloads/569bce8a27ab2c523e3880810efbe4c1@3.69.71.188_5060.pcap
+recent.capture_file: /home/mahmood/Downloads/5672e91d3b3d0b0e5485623018cb9a63@10.66.5.78_5060.pcap
+recent.capture_file: /home/mahmood/Downloads/59aeef0304d342604fd3e1633410cf84@10.66.5.78_5060.pcap
+recent.capture_file: /home/mahmood/Downloads/20bedfc9578e2fbb6087b27c65f8ae38@3.69.71.188_5060.pcap
+recent.capture_file: /home/mahmood/Downloads/323bc7380af1f709418b72c06bff7578@3.69.71.188_5060.pcap
+recent.capture_file: /home/mahmood/Downloads/548ed162416f37cd383cc0144842f29d@3.69.71.188_5060.pcap
+recent.capture_file: /home/mahmood/Downloads/pcap.pcap
+recent.capture_file: /home/mahmood/Downloads/88916371_97681596@94.77.211.70.pcap
+recent.capture_file: /home/mahmood/Downloads/39a16aa220226ff03d4dcdbf20ef8e60@192.168.180.20_5060.pcap
 
 ######## Recent capture filters (latest first), cannot be altered through command line ########
 
@@ -23,20 +23,22 @@ recent.capture_file: /home/mahmood/Downloads/export_4678503c594ea38f5b97020d3060
 ######## Recent display filters (latest last), cannot be altered through command line ########
 
 recent.display_filter: tcp.port != 22 and tcp and (ip.src == 18.192.127.56 || ip.dst == 18.192.127.56) and websocket 
+recent.display_filter: tcp
+recent.display_filter: udp.port == 5500
+recent.display_filter: tcp.port == 5500
+recent.display_filter: websocket && ip.addr == 18.192.127.56
+recent.display_filter: http && ip.addr == 18.192.127.56
+recent.display_filter: http && ip.addr == 3.79.210.53
+recent.display_filter: websocket && ip.addr == 3.79.210.53
+recent.display_filter: websocket
 recent.display_filter: tcp.port != 22 and tcp and (ip.src == 18.192.127.56 || ip.dst == 18.192.127.56) and (websocket || tcp)
-recent.display_filter: tcp.port != 22 and tcp and (ip.src == 18.192.127.56 || ip.dst == 18.192.127.56) and websocket
-recent.display_filter: tcp.port != 22 and tcp and (ip.src == 18.192.127.56 || ip.dst == 18.192.127.56) && websocket
-recent.display_filter: tcp.port != 22 and tcp and (ip.src == 18.192.127.56 || ip.dst == 18.192.127.56)
-recent.display_filter: tcp.port != 22 and tcp and ip.src == 18.192.127.56
-recent.display_filter: tcp.port != 22 and tcp
-recent.display_filter: ip.addr == 18.185.130.152
 
 # Main window geometry.
 # Decimal numbers.
 gui.geometry_main_x: 0
-gui.geometry_main_y: 1080
-gui.geometry_main_width: 956
-gui.geometry_main_height: 1025
+gui.geometry_main_y: 0
+gui.geometry_main_width: 849
+gui.geometry_main_height: 1021
 
 # Main window maximized.
 # true or false (case-insensitive).
@@ -44,7 +46,7 @@ gui.geometry_main_maximized: false
 
 # Main window geometry state.
 # Hex byte string.
-gui.geometry_main: 01d9d0cb000300000000000000000438000003bb000008380000000000000438000003bb00000838000000000000000007800000000000000438000003bb00000838
+gui.geometry_main: 01d9d0cb00030000000000000000000000000350000003fc000000000000000000000350000003fc00000001000000000a00000000000000000000000350000003fc
 
 # Leftalign Action Buttons.
 # true or false (case-insensitive).
@@ -89,17 +91,6 @@ gui.search_multiple_occurs: false
 # One of: DISPLAY_FILTER, HEX_VALUE, STRING, REGEX
 gui.search_type: DISPLAY_FILTER
 
-# Geometry and maximized state of SequenceDialog window.
-# Decimal integers.
-gui.geom.SequenceDialog.x: 0
-gui.geom.SequenceDialog.y: 1080
-gui.geom.SequenceDialog.width: 1916
-gui.geom.SequenceDialog.height: 1025
-# true or false (case-insensitive).
-gui.geom.SequenceDialog.maximized: false
-# Qt Geometry State (hex byte string).
-gui.geom.SequenceDialog.qt_geometry: 01d9d0cb0003000000000000000004380000077b0000083800000000000004380000077b000008380000000000000000078000000000000004380000077b00000838
-
 # Geometry and maximized state of ManageInterfacesDialog window.
 # Decimal integers.
 gui.geom.ManageInterfacesDialog.x: 0
@@ -116,44 +107,77 @@ gui.geom.ManageInterfacesDialog.qt_geometry: 01d9d0cb000300000000000000000000000
 gui.geom.RtpStreamDialog.x: 0
 gui.geom.RtpStreamDialog.y: 0
 gui.geom.RtpStreamDialog.width: 636
-gui.geom.RtpStreamDialog.height: 1025
+gui.geom.RtpStreamDialog.height: 1021
 # true or false (case-insensitive).
 gui.geom.RtpStreamDialog.maximized: false
 # Qt Geometry State (hex byte string).
-gui.geom.RtpStreamDialog.qt_geometry: 01d9d0cb0003000000000000000000000000027b0000040000000000000000000000027b0000040000000001000000000a0000000000000000000000027b00000400
+gui.geom.RtpStreamDialog.qt_geometry: 01d9d0cb0003000000000000000000000000027b000003fc00000000000000000000027b000003fc00000001000000000a0000000000000000000000027b000003fc
+
+# Geometry and maximized state of SequenceDialog window.
+# Decimal integers.
+gui.geom.SequenceDialog.x: 0
+gui.geom.SequenceDialog.y: 0
+gui.geom.SequenceDialog.width: 2560
+gui.geom.SequenceDialog.height: 1080
+# true or false (case-insensitive).
+gui.geom.SequenceDialog.maximized: true
+# Qt Geometry State (hex byte string).
+gui.geom.SequenceDialog.qt_geometry: 01d9d0cb000300000000000000000000000009ff0000043700000000000000000000027b000003fc00000001000400000a000000000000000000000009ff00000437
+
+# Geometry and maximized state of DecodeAsDialog window.
+# Decimal integers.
+gui.geom.DecodeAsDialog.x: 0
+gui.geom.DecodeAsDialog.y: 1080
+gui.geom.DecodeAsDialog.width: 750
+gui.geom.DecodeAsDialog.height: 460
+# true or false (case-insensitive).
+gui.geom.DecodeAsDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.DecodeAsDialog.qt_geometry: 01d9d0cb000300000000000000000438000002ed000006030000000000000438000002ed00000603000000000000000007800000000000000438000002ed00000603
+
+# Geometry and maximized state of PacketDialog window.
+# Decimal integers.
+gui.geom.PacketDialog.x: 0
+gui.geom.PacketDialog.y: 1080
+gui.geom.PacketDialog.width: 636
+gui.geom.PacketDialog.height: 1021
+# true or false (case-insensitive).
+gui.geom.PacketDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.PacketDialog.qt_geometry: 01d9d0cb0003000000000000000004380000027b0000083400000000000004380000027b000008340000000000000000078000000000000004380000027b00000834
+
+# Geometry and maximized state of RtpPlayerDialog window.
+# Decimal integers.
+gui.geom.RtpPlayerDialog.x: 0
+gui.geom.RtpPlayerDialog.y: 1080
+gui.geom.RtpPlayerDialog.width: 380
+gui.geom.RtpPlayerDialog.height: 1021
+# true or false (case-insensitive).
+gui.geom.RtpPlayerDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.RtpPlayerDialog.qt_geometry: 01d9d0cb0003000000000000000004380000017b0000083400000000000004380000017b000008340000000000000000078000000000000004380000017b00000834
+
+# Geometry and maximized state of RtpAnalysisDialog window.
+# Decimal integers.
+gui.geom.RtpAnalysisDialog.x: 0
+gui.geom.RtpAnalysisDialog.y: 1080
+gui.geom.RtpAnalysisDialog.width: 316
+gui.geom.RtpAnalysisDialog.height: 1021
+# true or false (case-insensitive).
+gui.geom.RtpAnalysisDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.RtpAnalysisDialog.qt_geometry: 01d9d0cb0003000000000000000004380000013b0000083400000000000004380000013b000008340000000000000000078000000000000004380000013b00000834
 
 # Geometry and maximized state of VoipCallsDialog window.
 # Decimal integers.
 gui.geom.VoipCallsDialog.x: 0
 gui.geom.VoipCallsDialog.y: 0
 gui.geom.VoipCallsDialog.width: 636
-gui.geom.VoipCallsDialog.height: 1025
+gui.geom.VoipCallsDialog.height: 1021
 # true or false (case-insensitive).
 gui.geom.VoipCallsDialog.maximized: false
 # Qt Geometry State (hex byte string).
-gui.geom.VoipCallsDialog.qt_geometry: 01d9d0cb0003000000000000000000000000027b0000040000000000000000000000027b0000040000000001000000000a0000000000000000000000027b00000400
-
-# Geometry and maximized state of PacketDialog window.
-# Decimal integers.
-gui.geom.PacketDialog.x: 0
-gui.geom.PacketDialog.y: 0
-gui.geom.PacketDialog.width: 1276
-gui.geom.PacketDialog.height: 1025
-# true or false (case-insensitive).
-gui.geom.PacketDialog.maximized: false
-# Qt Geometry State (hex byte string).
-gui.geom.PacketDialog.qt_geometry: 01d9d0cb000300000000000000000000000004fb000004000000000000000000000004fb0000040000000001000000000a000000000000000000000004fb00000400
-
-# Geometry and maximized state of RtpPlayerDialog window.
-# Decimal integers.
-gui.geom.RtpPlayerDialog.x: 0
-gui.geom.RtpPlayerDialog.y: 0
-gui.geom.RtpPlayerDialog.width: 508
-gui.geom.RtpPlayerDialog.height: 1025
-# true or false (case-insensitive).
-gui.geom.RtpPlayerDialog.maximized: false
-# Qt Geometry State (hex byte string).
-gui.geom.RtpPlayerDialog.qt_geometry: 01d9d0cb000300000000000000000000000001fb000004000000000000000000000001fb0000040000000001000000000a000000000000000000000001fb00000400
+gui.geom.VoipCallsDialog.qt_geometry: 01d9d0cb0003000000000000000000000000027b000003fc00000000000000000000027b000003fc00000001000000000a0000000000000000000000027b000003fc
 
 # Custom colors.
 # List of custom colors selected in Qt color picker.
