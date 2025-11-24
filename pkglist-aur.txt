@@ -1,0 +1,5 @@
+google-antigravity-bin
+google-chrome
+hyprland-qtutils
+localtime-git
+notable-bin

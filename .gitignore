@@ -1,0 +1,26 @@
+.antigravity
+.cache
+.cargo
+.config/libreoffice/4/user/backup
+.config/libreoffice/4/user
+.dotnet/corefx/cryptography/crls
+.gemini
+.gnupg
+.local
+.mozilla/firefox
+.mullvad/mullvadbrowser
+.notable/notes
+.pki/nssdb
+# SSH Keys and Configuration
+# ---------------------------
+
+# 1. Ignore everything inside the .ssh directory in the home folder
+.ssh/*
+
+# 2. UN-ignore the specific file you want to track
+!config
+.vscode
+Downloads
+Pictures
+Work
+go/pkg/mod

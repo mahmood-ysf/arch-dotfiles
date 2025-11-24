@@ -1,0 +1,14 @@
+git:
+  paging:
+    # Tells Lazygit to always output colors for the pager
+    colorArg: always
+    # The key configuration: use delta with side-by-side view.
+    # The --paging=never is crucial, as Lazygit handles the scrolling.
+    pager: delta --paging=never --side-by-side
+    # Optional: Disables using your global Git pager setting (good practice)
+    useConfig: false
+
+# Example of an optional style setting for delta:
+# You can customize delta further by adding arguments to the `pager` line.
+# Example with line numbers and a specific theme:
+# pager: delta --paging=never --side-by-side --line-numbers --syntax-theme Monokai Extended

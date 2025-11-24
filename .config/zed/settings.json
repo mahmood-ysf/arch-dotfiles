@@ -1,0 +1,91 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  // In your settings.json
+  "file_scan_exclusions": [
+    "**/node_modules",
+    "**/dist",
+    "**/build",
+    "**/.cache",
+    "**/.vscode-server"
+    // Add any large, irrelevant directories here
+  ],
+  "agent": {
+    "dock": "bottom",
+    "enabled": false
+  },
+  "notification_panel": {
+    "dock": "bottom"
+  },
+  "project_panel": {
+    "dock": "right"
+  },
+  "git_panel": {
+    "dock": "right",
+    "collapse_untracked_diff": true,
+    "status_style": "label_color"
+  },
+  "lsp": {
+    "solargraph": {
+      "initialization_options": {
+        "diagnostics": true,
+        "formatting": true
+      }
+    },
+    "ruby-lsp": {
+      "binary": {
+        // "path": "/home/dev/.rbenv/versions/3.1.4/bin/ruby-lsp"
+        "path": "/home/dev/ruby-lsp-bridge",
+        "arguments": ["stdio"]
+      }
+    }
+  },
+  "languages": {
+    "Ruby": {
+      "language_servers": [
+        "!solargraph",
+        "rubocop",
+        "ruby-lsp",
+        "!steep",
+        "!sorbet",
+        "..."
+      ],
+      "format_on_save": "on",
+      "tab_size": 2
+    },
+    "YAML": {
+      "tab_size": 2,
+      "format_on_save": "on" // Optional: Ensures it formats on save
+    }
+  },
+  "ssh_connections": [
+    {
+      "host": "maqsam-development",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/home/dev"]
+        },
+        {
+          "paths": ["/home/dev/maqsam"]
+        },
+        {
+          "paths": ["/home/dev/research"]
+        }
+      ]
+    }
+  ],
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark"
+  }
+}

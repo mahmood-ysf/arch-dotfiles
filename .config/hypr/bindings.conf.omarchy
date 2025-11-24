@@ -1,0 +1,41 @@
+# Application bindings
+$terminal = uwsm app -- $TERMINAL
+$browser = omarchy-launch-browser
+
+bindd = SUPER SHIFT, T, Terminal, exec, $terminal --working-directory="$(omarchy-cmd-terminal-cwd)"
+bindd = SUPER SHIFT, B, Browser, exec, $browser
+bindd = SUPER SHIFT ALT, B, Browser (private), exec, $browser --private
+bindd = SUPER SHIFT ALT, T, Activity, exec, $terminal -e btop
+
+bind = SUPER SHIFT, F, fullscreen, 0
+bind = SUPER SHIFT, M, fullscreen, 1                                                           # Maximize Window
+bind = SUPER SHIFT, Q, killactive                                                              # Kill active window
+bindm = SUPER SHIFT, mouse:272, movewindow                                                     # Move window with the mouse
+bindm = SUPER SHIFT CTRL, mouse:272, resizewindow
+bindm = SUPER SHIFT, mouse:273, resizewindow   
+bind = SUPER SHIFT, K, swapsplit                                                               # Swapsplit
+
+bind = SUPER SHIFT CTRL, right, resizeactive, 100 0                                           # Increase window width with keyboard
+bind = SUPER SHIFT CTRL, left, resizeactive, -100 0                                           # Reduce window width with keyboard
+bind = SUPER SHIFT CTRL, down, resizeactive, 0 100                                            # Increase window height with keyboard
+bind = SUPER SHIFT CTRL, up, resizeactive, 0 -100 
+
+bind = SUPER SHIFT, L, exec, omarchy-lock-screen
+# Overwrite existing bindings, like putting Omarchy Menu on Super + Space
+unbind = SUPER SHIFT, SPACE
+unbind = SUPER SHIFT, V
+unbind = SUPER SHIFT ALT, SPACE
+bind = SUPER SHIFT ALT, SPACE, togglefloating
+# bind = SUPER SHIFT, SPACE, exec, omarchy-menu
+bind = SUPER SHIFT, D, exec, walker
+bind = SUPER SHIFT, V, exec, ~/.config/rofi/clipboard.sh
+bind = SUPER CTRL SHIFT, LEFT, movecurrentworkspacetomonitor, l
+bind = SUPER CTRL SHIFT, RIGHT, movecurrentworkspacetomonitor, r
+bind = SUPER CTRL SHIFT, UP, movecurrentworkspacetomonitor, u
+bind = SUPER CTRL SHIFT, DOWN, movecurrentworkspacetomonitor, d
+
+bind = SUPER SHIFT ALT, R, exec, swaync-client -t -sw
+bind = SUPER SHIFT ALT, N, exec, swaync-client -d -sw
+
+unbind = SUPER SHIFT, P
+bind = SUPER SHIFT, P, exec, wl-copy 'Band ##infrastructure-band'
